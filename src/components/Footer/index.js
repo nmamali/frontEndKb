@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './header.css'
-import Logo from './covid.png';
 
 
 function Header() {

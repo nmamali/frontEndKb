@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React  from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import { Alert } from 'react-bootstrap';
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import TestCard from './TestCard';
+import TestCard from './TestCard/index';
 import Header from './Header';
 import Footer from './Footer';
 import Graphs from './Graphs';
