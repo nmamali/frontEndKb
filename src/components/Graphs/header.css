@@ -1,0 +1,15 @@
+/* Style the body */
+
+
+/* Header/Logo Title */
+.footer-style {
+  padding: 30px;
+  text-align: start;
+  background: #bc401a;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px !important;
+  margin-top: 6rem !important;
+}
+
+

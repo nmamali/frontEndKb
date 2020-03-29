@@ -1,0 +1,20 @@
+/* Style the body */
+
+
+/* Header/Logo Title */
+.header-header {
+  padding: 30px;
+  text-align: start;
+  background: #bc401a;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px !important;
+}
+.header-image{
+  height: 3rem !important;
+}
+.logo-position{
+  margin-left: 0.3rem !important;
+}
+/* Page Content */
+/* .content {padding:20px;} */
