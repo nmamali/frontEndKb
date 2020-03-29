@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 import RangeSlider from './RangeSlider';
 import tal from './cough.jpg';
+import './testcard.css'
 
 class TestCard extends Component{
     render(){
         return (
+            <div className="cardss">
+
+         
             <div className="ui centered cards">
             <div className="card">
             <div className="image">
@@ -24,6 +28,7 @@ class TestCard extends Component{
                     <div className="ui basic green button">Next</div>
                 </div>
                 </div>
+            </div>
             </div>
             </div>
         )
