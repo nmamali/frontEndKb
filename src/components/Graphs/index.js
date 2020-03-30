@@ -227,7 +227,7 @@ tooltip: {
 
   render() {
 
-      const text = this.state.loading ? "loading..." : ""
+      const text = this.state.loading ? "loading..." : "";
       return (
           <div>
               <p>{text}</p>
