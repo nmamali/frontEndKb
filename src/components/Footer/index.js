@@ -9,9 +9,9 @@ function Header() {
 <div class="footer-style">
 
   <div class='row'>
-      <div col-md-6>
+      <div>
       </div>
-      <div col-md-6 class='logo-position'>
+      <div class='logo-position'>
       <h5>Powered By Corenect</h5>
       </div>
   </div>

@@ -11,7 +11,7 @@ class App extends React.Component {
         return (
             <div>
                 <Header/>
-                <TestCard /> 
+                {/* <TestCard />  */}
                 <Graphs/>
                 <Footer/>
             </div>

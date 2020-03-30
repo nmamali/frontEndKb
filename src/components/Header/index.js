@@ -9,10 +9,10 @@ function Header() {
 <div class="header-header">
 
   <div class='row'>
-      <div col-md-6>
+      <div>
       <img class='header-image' src={Logo}/>
       </div>
-      <div col-md-6 class='logo-position'>
+      <div class='logo-position'>
       <h1>Covid 19</h1>
       </div>
   </div>
