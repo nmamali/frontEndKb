@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React  from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
@@ -27,13 +27,13 @@ require('highcharts/modules/map')(Highcharts);
 //           <div>
 //     <HighchartsReact highcharts={Highcharts} options={options} />
 //   </div>
-        
+
 //     </div>
 //     )
 // }
 
 
-class Graph extends Component {
+class Graph extends React.Component {
 
 
 
@@ -46,7 +46,7 @@ class Graph extends Component {
       }
 
 
-     
+
 
 
 
@@ -64,7 +64,7 @@ class Graph extends Component {
           enabled: true
         },
 
-  
+
         series: [{
           // Use the gb-all map with no data as a basemap
           name: 'SA COVID-19 Symptopms',
@@ -74,7 +74,7 @@ class Graph extends Component {
                 color: '#BC401A'
             }
         },
-        
+
         dataLabels: {
             enabled: true,
             format: '{point.name}'
@@ -95,7 +95,7 @@ class Graph extends Component {
           color: 'rgba(200, 200, 200, 0.3)',
           showInLegend: true
         },
-      
+
       ]
       }
 
@@ -106,7 +106,7 @@ class Graph extends Component {
 
 
 
-      
+
 
 
 
@@ -143,7 +143,7 @@ xAxis: {
       8,
       9,
       10
-   
+
   ],
   crosshair: true
 },
@@ -186,8 +186,8 @@ tooltip: {
   }
 
   drawGraph(data){
-     
-     
+
+
       data.forEach(element => {
         this.options.series[0].data[element.cough]+= 1;
         this.options.series[1].data[element.fever]+= 1;
@@ -199,9 +199,9 @@ tooltip: {
 
 
   }
-  
+
   componentDidMount() {
-  
+
       console.log("Entry point");
       this.setState({loading: true})
       fetch("http://corenectbackend.eu-west-1.elasticbeanstalk.com/api/covid/list")
@@ -220,11 +220,11 @@ tooltip: {
             })          })
           .then(err=>{
             console.log('PINGG',err);
-          })   
+          })
 
 
   }
-  
+
   render() {
 
       const text = this.state.loading ? "loading..." : ""
@@ -254,7 +254,7 @@ tooltip: {
    options={mapOptions}
 /> */}
           </div>
-          
+
       )
   }
 }
