@@ -1,0 +1,12 @@
+.picture{
+   background-color: #bc401a !important;
+}
+.size{
+  height: 28rem !important;
+
+}
+@media (max-width: 600px) {
+  .size {
+    height: 18rem;
+  }
+}
