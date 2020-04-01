@@ -2,11 +2,16 @@
    background-color: #bc401a !important;
 }
 .size{
-  height: 28rem !important;
+  width: auto;  /* set to anything and aspect ratio is maintained - also corrects glitch in Internet Explorer */
+  height: auto;  /* set to anything and aspect ratio is maintained */
+  max-width: 30rem;
+  max-height: 30rem;
+  border: 0;
+
 
 }
-@media (max-width: 600px) {
-  .size {
-    height: 18rem;
-  }
-}
+/*@media (max-width: 600px) {*/
+/*  .size {*/
+/*    height: 18rem;*/
+/*  }*/
+/*}*/

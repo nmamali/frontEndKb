@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Graphs from './Graphs';
 import Symptoms from './Symptops';
+import './gloabal.css';
 
 
 

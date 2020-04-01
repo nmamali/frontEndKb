@@ -11,7 +11,7 @@ const CardExample = () => {
 
       <MDBCol md='6'>
         <MDBCard narrow>
-          <MDBView cascade>
+          <MDBView cascade className="text-center">
             <MDBCardImage
               hover
               overlay='white-slight'
@@ -23,7 +23,7 @@ const CardExample = () => {
 
           <MDBCardBody>
             <h3 className='pink-text'>
-               Symptom: Cough
+               Symptom: weakness
             </h3>
             <MDBCardText>
               <h5>On a scale of [0 to 10] how bad is the symptoms</h5>
