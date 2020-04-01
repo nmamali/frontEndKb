@@ -3,8 +3,10 @@ import TestCard from './TestCard/index';
 import Header from './Header';
 import Footer from './Footer';
 import Graphs from './Graphs';
-import Symptoms from './Symptops';
-import './gloabal.css';
+import Login from './Login';
+import Location from './Location/location'
+import Signup from './Signup'
+
 
 
 
@@ -12,9 +14,11 @@ class App extends React.Component {
     render(){
         return (
             <div>
+                <Login/>
+                <Signup />
+                <Location />
                 <Header/>
                 <TestCard />
-                {/*<TestCard/>*/}
                 <Graphs/>
                 <Footer/>
             </div>
