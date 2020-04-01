@@ -204,7 +204,7 @@ tooltip: {
 
       console.log("Entry point");
       this.setState({loading: true})
-      fetch("http://corenectbackend.eu-west-1.elasticbeanstalk.com/api/covid/list")
+      fetch("https://cors-anywhere.herokuapp.com/http://corenectbackend.eu-west-1.elasticbeanstalk.com/api/covid/list", {mode: 'cors'})
           .then(response => response.json())
           .then(data => {
             console.log(data);
