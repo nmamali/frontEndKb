@@ -3,12 +3,11 @@ import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, 
 import './testcard.css'
 import weakness from '../pic/weakness.jpg';
 
-const CardExample = () => {
+const CardExample = (props) => {
   return (
     <MDBRow>
       <MDBCol md='3'>
       </MDBCol>
-
       <MDBCol md='6'>
         <MDBCard narrow>
           <MDBView cascade className="text-center">
@@ -16,14 +15,14 @@ const CardExample = () => {
               hover
               overlay='white-slight'
               className='card-img-top size'
-              src={weakness}
+              src={props.image}
               alt='food'
             />
           </MDBView>
 
           <MDBCardBody>
             <h3 className='pink-text'>
-               Symptom: weakness
+               Symptom: {props.sym}
             </h3>
             <MDBCardText>
               <h5>On a scale of [0 to 10] how bad is the symptoms</h5>
@@ -63,12 +62,17 @@ const CardExample = () => {
             <div className="d-flex justify-content-center my-4">
               <span className="font-weight-bold purple-text mr-2 mt-1">
 
-                 <button type="button" className="btn btn-primary d-flex justify-content-right my-9 picture">Prev Symptoms </button>
+                 <button type="button" className="btn btn-primary d-flex justify-content-right my-9 picture"
+                 onClick={() => props.handlePrev()}
+                 >Prev Symptoms </button>
               </span>
               <form className="range-field w-75">
               </form>
               <span className="font-weight-bold purple-text ml-2 mt-1">
-                 <button  type="button" className="btn btn-primary d-flex justify-content-right my-9 picture">Next Symptoms </button>
+                 <button  type="button" className="btn btn-primary d-flex justify-content-right my-9 picture"
+                 onClick={() => props.handleNext()}
+                 >
+                   Next Symptoms </button>
               </span>
             </div>
 

@@ -2,44 +2,12 @@ import React, {Component} from 'react';
 import RangeSlider from '../RangeSlider';
 import './testcard.css'
 import data from './data';
+import CardExample from '../Symptops';
 
 class TestCard extends Component{
     constructor() {
         super()
-        this.state = {value: 0,
-            content: [
-                {
-                    image:( <div className="image">
-                                <img src= {data[0].image} alt="" />
-                             </div>), 
-                    sym: data[0].symptom
-                },
-                {
-                    image:( <div className="image">
-                                <img src= {data[1].image} alt="" />
-                             </div>), 
-                    sym: data[1].symptom
-                },
-                {
-                    image:( <div className="image">
-                                <img src= {data[2].image} alt="" />
-                             </div>), 
-                    sym: data[2].symptom
-                },
-                {
-                    image:( <div className="image">
-                                <img src= {data[3].image} alt="" />
-                             </div>), 
-                    sym: data[3].symptom
-                },
-                {
-                    image:( <div className="image">
-                                <img src= {data[4].image} alt="" />
-                             </div>), 
-                    sym: data[4].symptom
-                },
-            ] 
-        };
+        this.state = {value: 0 };
         this.handleNext = this.handleNext.bind(this);
         this.handlePrev = this.handlePrev.bind(this);
         
@@ -63,35 +31,12 @@ class TestCard extends Component{
 
     render(){
         return (
-            <div className="cardss">
-                <div className="ui centered cards">
-                     <div className="card">
-                         {this.state.content[this.state.value].image}
-                        <div className="content">
-                            <div className="center aligned header">
-                                {this.state.content[this.state.value].sym}
-                            </div>
-                            <div className="description">
-                                <RangeSlider />
-                            </div>
-                        </div>
-                    <div className="extra content">
-                        <div className="ui two buttons">
-                            <div className="ui basic red button"
-                            onClick={this.handlePrev}
-                            >
-                            Prev
-                            </div>
-                            <div className="ui basic green button"
-                            onClick={this.handleNext}
-                            >
-                            Next
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+           <CardExample 
+           sym={data[this.state.value].symptom}
+           image={data[this.state.value].image} 
+           handleNext={this.handleNext}
+           handlePrev={this.handlePrev}       
+           />
     )
     }
 }
